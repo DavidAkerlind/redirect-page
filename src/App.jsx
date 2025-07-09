@@ -4,7 +4,7 @@ import backgroundImage from '../src/assets/images/background2.jpg';
 import logo from '../src/assets/logo/hare-logo-white.svg';
 
 function App() {
-	const [countdown, setCountdown] = useState(5);
+	const [countdown, setCountdown] = useState(3);
 	const [imageLoaded, setImageLoaded] = useState(false);
 	const redirectUrl = 'https://www.harpaviljongen.com/';
 
@@ -21,7 +21,7 @@ function App() {
 		const timer = setInterval(() => {
 			setCountdown((prev) => {
 				if (prev <= 1) {
-					// window.location.href = redirectUrl; // Kommenterad för att kunna se designen
+					window.location.href = redirectUrl; // Kommenterad för att kunna se designen
 					return 0;
 				}
 				return prev - 1;
@@ -32,7 +32,7 @@ function App() {
 	}, [redirectUrl]);
 
 	const handleManualRedirect = () => {
-		// window.location.href = redirectUrl; // Kommenterad för att kunna se designen
+		window.location.href = redirectUrl; // Kommenterad för att kunna se designen
 		console.log('Skulle omdirigera till:', redirectUrl);
 	};
 
