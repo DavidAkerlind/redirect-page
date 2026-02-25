@@ -1,18 +1,4 @@
-.app {
-	min-height: 100vh;
-	min-width: 100vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	position: relative;
-	opacity: 0;
-	transition: opacity 1s ease-in-out;
-}
+/* styles */
 
 .app.image-loaded {
 	opacity: 1;
